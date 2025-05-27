@@ -1,0 +1,46 @@
+h1{
+    text-align: center;
+    text-size-adjust: 3em;
+}
+
+nav{
+    flex: auto;
+    background-color: blueviolet;
+    color:white;
+}
+nav a{
+    color: white;
+}
+#active{
+    color:aqua;
+}
+body{
+    background-color: aliceblue;
+    color:rgb(30, 30, 30);
+}
+body>p,body img{
+    background-color: aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    display: inline-block;
+}
+footer{
+    flex: auto;
+    padding-top:0px;
+    background-color: blueviolet !important;
+    color:white !important;
+}
+footer a{
+    padding: 10px;
+    color: white;
+}
+.image{
+    width: 300px;
+    height: 200px;
+    float:inline-start;
+    padding-right: 10px;
+}
+.divider{
+    height: 5px;
+    background-color:darkmagenta;
+}
