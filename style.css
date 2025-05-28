@@ -5,18 +5,18 @@ h1{
 
 nav{
     flex: auto;
-    background-color: blueviolet;
+    background-color: blueviolet !important;
     color:white;
     padding: 20px;
-
 }
-nav a{
+.link{
+    background-color: cadetblue !important;
+    border-radius: 20%;
     color: white;
+    text-decoration: none;
 }
-nav>ul>li{
-    display: inline-block;
-    padding-left: 5px;
-}
+
+
 #active{
     color:aqua;
 }
@@ -24,10 +24,18 @@ body{
     background-color: aliceblue;
     color:rgb(30, 30, 30);
 }
-div{
-    background-color: aquamarine;
+
+.navbar{
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    flex-basis: 100px;
+    flex-wrap: wrap;
+    justify-content:left;
+    
 }
 body>div>p{
+    background-color: aquamarine;
     font-family: Arial, Helvetica, sans-serif;
     color: gray;
     display: inline-block;
@@ -56,11 +64,15 @@ footer a{
     clear:left;
 }
 iframe{
-    padding-left: 25%;
-    padding-right: 25%;
+    display:block;
     width:600px;
     height:450px;
-    border:0; 
+    margin: 0 auto;
+    border: 0;
+}
+div.mappa{
+    text-align: center;
+    background-color: transparent;
 }
 
 @media (max-width: 600px) {
@@ -72,11 +84,15 @@ iframe{
         padding: 10px;
         font-size: 1em;
     }
-    nav>ul>li {
-        display: block;
-        padding-left: 0;
-        margin-bottom: 5px;
-    }
+   .navbar{
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    flex-basis: 100px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
     .image {
         width: 100%;
         height: auto;
